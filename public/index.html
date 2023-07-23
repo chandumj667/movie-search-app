@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="shortcut icon" href="/web_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whole">
+        <!-- header section -->
+        <div class="header">
+            <!-- logo -->
+            <div class="logo">
+                Cine<span>Ma</span>
+            </div>
+            <!-- search container -->
+            <div class="search_container">
+                    <input class="search_input" id="search_input"  type="text" placeholder="Search Movie here" onkeyup="searchMovies()">
+    
+                    <div class="search_list" id="search_list">
+                        <div class="search_list_item">
+                            <div class="search_item_img">
+                                <img src="/download.png" alt="Movie Poster">
+                            </div>
+                            <div class="search_item_info">
+                                <h3>Bahubali: The Conclusion</h3>
+                                <p>2017</p>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- section to display the movie result -->
+        <!-- <div class="header"> -->
+            
+            <div class="whole result_container">
+                <div class="result_grid" id="result_grid">
+                    <div class="movie_poster">
+                        <img src="/download.png" alt="Movie Poster">
+                    </div>
+
+                    <div class="movie_info">
+                        <h3 class="title">Bahubali: The Conclusion</h3>
+                        <ul class="misc_info">
+                            <li class="year">Year:2017</li>
+                            <li class="rated">Ratings: UG</li>
+                            <li class="released">Released: 28 April 2017</li>
+                        </ul>
+
+                        <p class="genre">
+                            <b>Genre:</b>Action, Adventure, Drama, History, Fantasy 
+                        </p>
+
+                        <p class="writer">
+                            <b>Writer:</b>V.Vijayendra Prasad
+                        </p>
+
+                        <p class="actors">
+                            <b>Actors:</b>Prabhas, Rana Daggubati, Anushka, Tamannaah, Ramya Krishna, Nassar, Subbaraju, Sathyaraj.
+                        </p>
+
+                        <p class="plot">
+                            <b>Plot:</b>"Baahubali 2: The Conclusion" is an epic tale of love, betrayal, and political intrigue in the kingdom of Mahishmati.
+                            The film delves into the past of Amarendra Baahubali, revealing the reasons behind his tragic fate.
+                        </p>
+                        <p class="language">
+                            <b>Language:</b>Telugu
+                        </p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b> National Film Awards</p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="/server.js"></script>
+</body>
+</html>
